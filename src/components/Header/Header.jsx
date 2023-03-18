@@ -5,6 +5,9 @@ import "./header.css";
 import { AiOutlineMenu } from "react-icons/ai";
 import { RxCross2 } from "react-icons/rx";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Header = () => {
   const [menuItems, setMenuItems] = useState([]);
   const [menuClicked, setMenuClicked] = useState("navbar menu-clicked");
@@ -19,6 +22,10 @@ const Header = () => {
   useEffect(() => {
     setMenuItems(NavItems);
   }, []);
+
+  useEffect(() => {
+    AOS.init({ duration: 1800 });
+  }, [menuClicked]);
 
   return (
     <div className="header-container">
@@ -54,7 +61,11 @@ const Header = () => {
             })}
           </ul>
         </nav>
-        <div className="small-menu" onClick={toogleMenuBar}>
+        <div
+          data-aos="fade-left"
+          className="small-menu"
+          onClick={toogleMenuBar}
+        >
           {menuClicked === "navbar" ? (
             <RxCross2 id="header-icon" />
           ) : (

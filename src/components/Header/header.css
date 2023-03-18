@@ -36,6 +36,7 @@
 }
 
 .small-menu{
+    transition: 0.4s ease;
     display: none;
 }
 #header-icon{
@@ -69,6 +70,7 @@
         width: 75%;
         z-index: 2;
         background: var(--color-bg-variant);
+        transition: 0.4s ease;
     }
     .nav-item{
         margin-top: 3rem;
