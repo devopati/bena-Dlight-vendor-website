@@ -1,0 +1,88 @@
+.mobile-container{
+    padding-top: 5.8rem;
+}
+
+.mobile-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
+    margin: .5rem;
+}
+.m-right.m-small{
+    display: none;
+}
+
+.m-left img{
+    width: 100%;
+    height: 80%;
+}
+.m-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.m-header1{
+    font-size: 2rem;
+    color: var(--color-orange);
+}
+.m-header2{
+    padding-top: 2.5rem;
+    font-size: 1.4rem;
+    color: var(---color-txt);
+}
+
+.nokia-header{
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.nokia-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    align-items: center;
+    padding: 0.9rem;
+    margin-bottom: 1rem;
+}
+.nokia-card{
+    align-items: center;
+    text-align: center;
+    padding: 0.9rem;
+    background: rgb(254, 250, 250);
+    cursor: pointer;
+    border-radius: 0.4rem;
+}
+
+.nokia-image img{
+    width: 50%;
+    height: 9rem;
+}
+
+.n-t2{
+    color: grey;
+    font-weight:1px;
+}
+.n-t1{
+    color: var(--color-orange);
+    margin-top: 0.6rem;
+}
+
+@media screen and (max-width:768px) {
+    .mobile-cards{
+        grid-template-columns: 1fr;
+    }
+    .m-right.m-big{
+        display: none;
+    }
+    .m-right.m-small{
+        display: block;
+    }
+    .m-header2{
+        margin-top: 1rem;
+    }
+    .nokia-cards{
+        grid-template-columns: 1fr;
+        padding: 0.1rem;
+    }
+}
