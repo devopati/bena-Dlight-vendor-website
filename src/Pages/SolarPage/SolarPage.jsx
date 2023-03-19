@@ -8,7 +8,7 @@ import { BsFillArrowRightCircleFill } from "react-icons/bs";
 
 const SolarPage = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 1500 });
   }, []);
 
   return (
@@ -29,7 +29,7 @@ const SolarPage = () => {
             </div>
           </div>
         </div>
-        <div className="m-left">
+        <div className="m-left" data-aos="zoom-in">
           <img
             src="https://www.dlight.com/wp-content/uploads/2018/09/product-hero.jpg"
             alt="Mobile"
@@ -86,7 +86,7 @@ const SolarPage = () => {
               alt="LOGO"
             />
           </div>
-          <div className="m-last-description">
+          <div className="m-last-description" data-aos="fade-right">
             <div className="m-last-header">
               <span>Why Choose d.light?</span>
             </div>

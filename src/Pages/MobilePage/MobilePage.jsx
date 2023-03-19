@@ -11,7 +11,7 @@ import { BsFillArrowRightCircleFill } from "react-icons/bs";
 
 const MobilePage = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 1500 });
   }, []);
 
   return (
@@ -32,7 +32,7 @@ const MobilePage = () => {
             </div>
           </div>
         </div>
-        <div className="m-left">
+        <div className="m-left" data-aos="zoom-in">
           <img
             src="https://www.dlight.com/wp-content/uploads/nokia_G10-DTC-DESIGN-desktop_800.png"
             alt="Mobile"
@@ -117,7 +117,7 @@ const MobilePage = () => {
               alt="LOGO"
             />
           </div>
-          <div className="m-last-description">
+          <div className="m-last-description" data-aos="fade-right">
             <div className="m-last-header">
               <span>Make it Yours Today!</span>
             </div>
