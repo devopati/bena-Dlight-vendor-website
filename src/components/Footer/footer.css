@@ -29,6 +29,7 @@ margin-bottom: 2rem;
     border-radius: 2rem;
     font-weight:3rem;
     margin: auto;
+    cursor: pointer;
 }
 .footer-btn:hover{
     color: var(--color-orange-variant);
