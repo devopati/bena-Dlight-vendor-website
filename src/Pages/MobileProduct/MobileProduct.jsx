@@ -108,7 +108,7 @@ const MobileProduct = () => {
                       <br />
                       <br />
                     </p>
-                    <div className="mobile-product-btn m-p-big">
+                    <div className="mobile-product-btn">
                       <div className="m-p-btn">
                         <BsFillArrowRightCircleFill id="m-p-icon" />
                         <h4>Buy Now</h4>
