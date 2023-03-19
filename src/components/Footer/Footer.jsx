@@ -15,7 +15,11 @@ const Footer = () => {
 
   return (
     <div className="footer-container">
-      <div className="f-c-contents">
+      <div
+        className="f-c-contents"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+      >
         <div className="footer-contact">
           <div className="f-contact-h3">
             <h3>For Purchases and inquiries</h3>
