@@ -38,19 +38,35 @@ const MobileProduct = () => {
                 </div>
                 <div className="m-product-middle">
                   <div className="mobile-product-btn m-p-big">
-                    <div className="m-p-btn">
-                      <BsFillArrowRightCircleFill id="m-p-icon" />
-                      <h4>Buy Now</h4>
-                    </div>
+                    <a
+                      href={`https://wa.me/+254704027671?text=${encodeURIComponent(
+                        `Hello! I'm interested in your d.light pay-as-you-go product. Provide me with more information on the Mobile ${item.name}, such as its features and pricing. Thank you!`
+                      )}`}
+                      style={{ color: "black" }}
+                      target="_blank"
+                    >
+                      <div className="m-p-btn">
+                        <BsFillArrowRightCircleFill id="m-p-icon" />
+                        <h4>Buy Now</h4>
+                      </div>
+                    </a>
                   </div>
                   <div className="mobile-product-image">
                     <img src={item.image} alt={item.name} />
                   </div>
                   <div className="mobile-product-btn m-p-small">
-                    <div className="m-p-btn">
-                      <BsFillArrowRightCircleFill id="m-p-icon" />
-                      <h4>Buy Now</h4>
-                    </div>
+                    <a
+                      href={`https://wa.me/+254704027671?text=${encodeURIComponent(
+                        `Hello! I'm interested in your d.light pay-as-you-go product. Provide me with more information on the Mobile ${item.name}, such as its features and pricing. Thank you!`
+                      )}`}
+                      style={{ color: "black" }}
+                      target="_blank"
+                    >
+                      <div className="m-p-btn">
+                        <BsFillArrowRightCircleFill id="m-p-icon" />
+                        <h4>Buy Now</h4>
+                      </div>
+                    </a>
                   </div>
                 </div>
                 <div className="mobile-prod-mid-mid">
@@ -116,10 +132,18 @@ const MobileProduct = () => {
                       <br />
                     </p>
                     <div className="mobile-product-btn">
-                      <div className="m-p-btn">
-                        <BsFillArrowRightCircleFill id="m-p-icon" />
-                        <h4>Buy Now</h4>
-                      </div>
+                      <a
+                        href={`https://wa.me/+254704027671?text=${encodeURIComponent(
+                          `Hello! I'm interested in your d.light pay-as-you-go product. Provide me with more information on the Mobile ${item.name}, such as its features and pricing. Thank you!`
+                        )}`}
+                        style={{ color: "white" }}
+                        target="_blank"
+                      >
+                        <div className="m-p-btn">
+                          <BsFillArrowRightCircleFill id="m-p-icon" />
+                          <h4>Buy Now</h4>
+                        </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -149,14 +173,22 @@ const MobileProduct = () => {
                       <br />
                       <br />
                       <div className="mobile-product-btn">
-                        <div
-                          className="m-p-btn m-p-last"
+                        <a
+                          href={`https://wa.me/+254704027671?text=${encodeURIComponent(
+                            `Hello! I'm interested in your d.light pay-as-you-go product. Provide me with more information on the Mobile ${item.name}, such as its features and pricing. Thank you!`
+                          )}`}
                           style={{ color: "white" }}
+                          target="_blank"
                         >
-                          <BsFillArrowRightCircleFill id="m-p-icon" />
-                          <h4>Buy Now</h4>
-                          <br />
-                        </div>
+                          <div
+                            className="m-p-btn m-p-last"
+                            style={{ color: "white" }}
+                          >
+                            <BsFillArrowRightCircleFill id="m-p-icon" />
+                            <h4>Buy Now</h4>
+                            <br />
+                          </div>
+                        </a>
                       </div>
                     </p>
                   </div>

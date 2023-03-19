@@ -4,16 +4,15 @@ import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import { solarSystemsData } from "../../Data/solarData";
 
 const MobileProduct = () => {
-  const capacityIcon =
-    "https://www.dlight.com/wp-content/uploads/Battery-Capacity-1.png";
-  const cameraIcon =
-    "https://www.dlight.com/wp-content/uploads/Camera-Icon-1.png";
-  const displayIcon =
-    "https://www.dlight.com/wp-content/uploads/Screen-size-icon-1.png";
-  const memoryIcon =
-    "https://www.dlight.com/wp-content/uploads/Memory-Icon-1.png";
-  const paygoIcon =
-    "https://www.dlight.com/wp-content/uploads/PayGo-Icon-1.png";
+  const battery =
+    "https://www.dlight.com/wp-content/uploads/2018/08/icon-battery.png";
+  const radio =
+    "https://www.dlight.com/wp-content/uploads/2018/08/icon-radio.png";
+  const brightness =
+    "https://www.dlight.com/wp-content/uploads/2018/08/icon-brightness.png";
+  const portability =
+    "https://www.dlight.com/wp-content/uploads/2018/08/icon-portability.png";
+
   const { name, solarId } = useParams();
 
   const [mapData, setMapData] = useState([]);
@@ -36,19 +35,35 @@ const MobileProduct = () => {
                 </div>
                 <div className="m-product-middle">
                   <div className="mobile-product-btn m-p-big">
-                    <div className="m-p-btn">
-                      <BsFillArrowRightCircleFill id="m-p-icon" />
-                      <h4>Buy Now</h4>
-                    </div>
+                    <a
+                      href={`https://wa.me/+254704027671?text=${encodeURIComponent(
+                        `Hello! I'm interested in your d.light pay-as-you-go product. Provide me with more information on the Solar Product ${item.name}, such as its features and pricing. Thank you!`
+                      )}`}
+                      style={{ color: "black" }}
+                      target="_blank"
+                    >
+                      <div className="m-p-btn">
+                        <BsFillArrowRightCircleFill id="m-p-icon" />
+                        <h4>Buy Now</h4>
+                      </div>
+                    </a>
                   </div>
                   <div className="mobile-product-image">
                     <img src={item.image} alt={item.name} />
                   </div>
                   <div className="mobile-product-btn m-p-small">
-                    <div className="m-p-btn">
-                      <BsFillArrowRightCircleFill id="m-p-icon" />
-                      <h4>Buy Now</h4>
-                    </div>
+                    <a
+                      href={`https://wa.me/+254704027671?text=${encodeURIComponent(
+                        `Hello! I'm interested in your d.light pay-as-you-go product. Provide me with more information on the Solar Product ${item.name}, such as its features and pricing. Thank you!`
+                      )}`}
+                      style={{ color: "black" }}
+                      target="_blank"
+                    >
+                      <div className="m-p-btn">
+                        <BsFillArrowRightCircleFill id="m-p-icon" />
+                        <h4>Buy Now</h4>
+                      </div>
+                    </a>
                   </div>
                 </div>
                 <div className="mobile-prod-mid-mid">
@@ -62,62 +77,91 @@ const MobileProduct = () => {
                 <div className="mobile-prod-top-bottom">
                   <div className="m-top-bottom-cards">
                     <div className="m-top-bottom-card1">
-                      <img src={capacityIcon} alt="Capacity" />
-                      <br />
-                      <span>Battery: {item.capacity}</span>
-                    </div>
-                    <div className="m-top-bottom-card2">
-                      <img src={cameraIcon} alt="Camera" />
+                      <img src={battery} alt="battery" />
                       <br />
                       <span>
-                        Front: {item.cfront} Rear: {item.crear}
+                        Battery: <br /> {item.battery}
+                      </span>
+                    </div>
+                    <div className="m-top-bottom-card2">
+                      <img src={radio} alt="radio" />
+                      <br />
+                      <span>
+                        Radio: <br /> {item.radio}
                       </span>
                     </div>
                   </div>
                   <div className="m-top-bottom-cards">
                     <div className="m-top-bottom-card1">
-                      <img src={memoryIcon} alt="Memory" />
+                      <img src={brightness} alt="brightness" />
                       <br />
-                      <span>{item.memory}</span>
+                      <span>
+                        Brightness: <br />
+                        {item.brightness}
+                      </span>
                     </div>
                     <div className="m-top-bottom-card2">
-                      <img src={paygoIcon} alt="paygo" />
+                      <img src={portability} alt="paygo" />
                       <br />
-                      <span>PayGo: Pay in easy installments</span>
+                      <span>
+                        Portability: <br /> {item.portability}
+                      </span>
                     </div>
                   </div>
                 </div>
                 <div className="mob-prod-mid-bottom">
                   <div className="mob-prod-mid-bottom-content">
-                    <h2>A choice for durability</h2>
+                    <h2>Flexible design</h2>
                     <br />
                     <br />
 
                     <p>
-                      You may want to double check the battery capacity of this
-                      phone as that will tell it all! You need a phone with more
-                      power! A phone whose battery doesn’t need charging after
-                      every other hour. You need to make a choice of durability
+                      The modular {item.name} system enables you to arrange the
+                      solar LED lights to best suit your home or business. With
+                      the flip of a switch, you can light up your home for{" "}
+                      {item.battery}.
                     </p>
                     <br />
                     <br />
-                    <h2>Making a Statement </h2>
+                    <h2>Exciting Accessories </h2>
                     <br />
                     <br />
                     <p>
-                      Maximize the power of your {item.name} battery, take those
-                      perfect shots using its powerful camera, and the best part
-                      of it is that you can pay for it slowly using our PayGo
-                      technology.
+                      The {item.name} bundle comes packed with a solar FM radio
+                      with MP3 playback and a bright torch lasting for hours on
+                      a single charge.
                       <br />
                       <br />
                       <br />
                     </p>
+                    <br />
+                    <br />
+                    <h2>PayGo technology </h2>
+                    <br />
+                    <br />
+                    <p>
+                      The {item.name} allows you to own a powerful solar home
+                      system without any financial burden; now pay in easy
+                      installments from the convenience of your home using our
+                      patented technology.
+                      <br />
+                      <br />
+                      <br />
+                    </p>
+
                     <div className="mobile-product-btn">
-                      <div className="m-p-btn">
-                        <BsFillArrowRightCircleFill id="m-p-icon" />
-                        <h4>Buy Now</h4>
-                      </div>
+                      <a
+                        href={`https://wa.me/+254704027671?text=${encodeURIComponent(
+                          `Hello! I'm interested in your d.light pay-as-you-go product. Provide me with more information on the Solar Product ${item.name}, such as its features and pricing. Thank you!`
+                        )}`}
+                        style={{ color: "white" }}
+                        target="_blank"
+                      >
+                        <div className="m-p-btn">
+                          <BsFillArrowRightCircleFill id="m-p-icon" />
+                          <h4>Buy Now</h4>
+                        </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -147,14 +191,22 @@ const MobileProduct = () => {
                       <br />
                       <br />
                       <div className="mobile-product-btn">
-                        <div
-                          className="m-p-btn m-p-last"
+                        <a
+                          href={`https://wa.me/+254704027671?text=${encodeURIComponent(
+                            `Hello! I'm interested in your d.light pay-as-you-go product. Provide me with more information on the Solar Product ${item.name}, such as its features and pricing. Thank you!`
+                          )}`}
                           style={{ color: "white" }}
+                          target="_blank"
                         >
-                          <BsFillArrowRightCircleFill id="m-p-icon" />
-                          <h4>Buy Now</h4>
-                          <br />
-                        </div>
+                          <div
+                            className="m-p-btn m-p-last"
+                            style={{ color: "white" }}
+                          >
+                            <BsFillArrowRightCircleFill id="m-p-icon" />
+                            <h4>Buy Now</h4>
+                            <br />
+                          </div>
+                        </a>
                       </div>
                     </p>
                   </div>
