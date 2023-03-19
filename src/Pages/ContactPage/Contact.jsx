@@ -2,10 +2,16 @@ import React from "react";
 import "./contact.css";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { BsWhatsapp } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <div className="contact-container">
+    <motion.div
+      animate={{ opacity: [0, 0, 1, 1] }}
+      exit={{ opacity: [1, 1, 0, 0] }}
+      transition={{ type: "tween", duration: 1 }}
+      className="contact-container"
+    >
       <div className="contact-header">
         <small>Get in Touch: </small>
         <h2>Contact Me</h2>
@@ -44,7 +50,7 @@ const Contact = () => {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
