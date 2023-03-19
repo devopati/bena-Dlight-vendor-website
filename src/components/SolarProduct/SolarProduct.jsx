@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import { solarSystemsData } from "../../Data/solarData";
+import { motion } from "framer-motion";
 
 const MobileProduct = () => {
   const battery =
@@ -22,8 +23,12 @@ const MobileProduct = () => {
   }, [mapData]);
   return (
     <>
-      <div></div>
-      <div className="mobile-product-container">
+      <motion.div
+        className="mobile-product-container"
+        animate={{ opacity: [0, 0, 1, 1] }}
+        exit={{ opacity: [1, 1, 0, 0] }}
+        transition={{ type: "tween", duration: 1 }}
+      >
         {mapData
           .filter((item) => item.id === solarId)
           .map((item) => {
@@ -214,7 +219,7 @@ const MobileProduct = () => {
               </div>
             );
           })}
-      </div>
+      </motion.div>
     </>
   );
 };

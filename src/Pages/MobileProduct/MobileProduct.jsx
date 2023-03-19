@@ -5,6 +5,8 @@ import { nokiaData } from "../../Data/nokiaData";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import { samsungData } from "../../Data/samsungData";
 
+import { motion } from "framer-motion";
+
 const MobileProduct = () => {
   const capacityIcon =
     "https://www.dlight.com/wp-content/uploads/Battery-Capacity-1.png";
@@ -25,8 +27,12 @@ const MobileProduct = () => {
   }, [mapData]);
   return (
     <>
-      <div></div>
-      <div className="mobile-product-container">
+      <motion.div
+        className="mobile-product-container"
+        animate={{ opacity: [0, 0, 1, 1] }}
+        exit={{ opacity: [1, 1, 0, 0] }}
+        transition={{ type: "tween", duration: 1 }}
+      >
         {mapData
           .filter((item) => item.id === prodId)
           .map((item) => {
@@ -196,7 +202,7 @@ const MobileProduct = () => {
               </div>
             );
           })}
-      </div>
+      </motion.div>
     </>
   );
 };

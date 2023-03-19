@@ -1,0 +1,92 @@
+.homepage-container{
+    padding-top: 8rem;
+}
+
+.homepage-header{
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.home-header1{
+    margin: auto;
+    padding: 2rem;
+}
+.home-header1 p{
+    color: grey;
+}
+.home-header2 img{
+    width: 86%;
+}
+.home-featured-products{
+    margin-top: 2rem;
+    padding: 3rem;
+    text-align: center;
+}
+.home-featured-products p{
+    color: grey;
+}
+.featured-p-body{
+    text-align: center;
+    margin-top: 3rem;
+}
+.featured-p-body img{
+    width: 55%;
+}
+.home-how-to{
+    text-align: center;
+    margin-top: 2rem;
+}
+.home-how-to p{
+    color:grey;
+}
+.home-how-cards{
+    padding-top: 2.5rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3,1fr);
+   width: 60%;
+   margin: auto;
+}
+.home-how-cards small{
+    color: grey;
+}
+.home-how-cards h3{
+    color: var(--color-orange);
+}
+.home-how-card{
+  margin-bottom: 2rem;
+    padding: 2rem;
+    height: 10rem;
+    width: 10rem;
+    background: var(--color-bg-variant);
+    text-align: center;
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width:768px) {
+    .homepage-header{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .home-header1{
+        padding: .5rem;
+    }
+    .home-header2 img{
+        width: 100%;
+    }
+    .home-featured-products{
+        padding: .5rem;
+    }
+    .home-how-cards{
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        grid-area: 2rem;
+        margin-left:1rem ;
+    }
+}

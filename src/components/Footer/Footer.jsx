@@ -7,6 +7,7 @@ import {
   BsInstagram,
   BsLinkedin,
 } from "react-icons/bs";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const Footer = () => {
@@ -20,29 +21,40 @@ const Footer = () => {
             <h3>For Purchases and inquiries</h3>
           </div>
           <div className="f-btn">
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              className="footer-btn"
-            >
-              Contact Me <BsArrowRightShort id="f-icon" />
-            </motion.button>
+            <Link to="/contact">
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className="footer-btn"
+              >
+                Contact Me <BsArrowRightShort id="f-icon" />
+              </motion.button>
+            </Link>
           </div>
         </div>
       </div>
 
       <div className="footer-last">
         <div className="footer-logo">
-          <img
+          <motion.img
             src="https://www.dlight.com/wp-content/themes/dlight-baunfire/img/logonew-footer.png"
             alt="LOGO"
+            whileHover={{ scale: 1.1 }}
           />
         </div>
         <div className="footer-icons">
-          <BsFacebook id="footer-icon" />
-          <BsTwitter id="footer-icon" />
-          <BsInstagram id="footer-icon" />
-          <BsLinkedin id="footer-icon" />
+          <motion.a href="#" whileHover={{ y: -5 }}>
+            <BsFacebook id="footer-icon" />
+          </motion.a>
+          <motion.a href="#" whileHover={{ y: -5 }}>
+            <BsTwitter id="footer-icon" />
+          </motion.a>
+          <motion.a href="#" whileHover={{ y: -5 }}>
+            <BsInstagram id="footer-icon" />
+          </motion.a>
+          <motion.a href="#" whileHover={{ y: -5 }}>
+            <BsLinkedin id="footer-icon" />
+          </motion.a>
         </div>
       </div>
 

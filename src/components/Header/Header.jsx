@@ -4,6 +4,7 @@ import { NavItems } from "../../Data/navItems";
 import "./header.css";
 import { AiOutlineMenu } from "react-icons/ai";
 import { RxCross2 } from "react-icons/rx";
+import { motion } from "framer-motion";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -32,7 +33,8 @@ const Header = () => {
       <div className="header-items">
         <div className="header-logo">
           <Link to="/">
-            <img
+            <motion.img
+              whileHover={{ scale: 1.1 }}
               src="https://www.dlight.com/wp-content/themes/dlight-baunfire/img/logonew-footer.png"
               alt="LOGO"
             />

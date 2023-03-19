@@ -15,7 +15,12 @@ const MobilePage = () => {
   }, []);
 
   return (
-    <div className="mobile-container">
+    <motion.div
+      className="mobile-container"
+      animate={{ opacity: [0, 0, 1, 1] }}
+      exit={{ opacity: [1, 1, 0, 0] }}
+      transition={{ type: "tween", duration: 1 }}
+    >
       <div className="mobile-cards">
         <div className="m-right m-small">
           <div className="m-right-headers">
@@ -134,7 +139,7 @@ const MobilePage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
