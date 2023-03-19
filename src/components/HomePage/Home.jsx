@@ -22,9 +22,7 @@ const Home = () => {
         <div className="home-header1">
           <Typewriter
             options={{
-              strings: [
-                "Affordable, quality verified, entertainment solutions for you. ",
-              ],
+              strings: ["Affordable, quality verified,solutions."],
               autoStart: true,
               loop: true,
             }}
