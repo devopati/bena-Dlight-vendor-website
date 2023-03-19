@@ -48,16 +48,32 @@ const Footer = () => {
           />
         </div>
         <div className="footer-icons">
-          <motion.a href="#" whileHover={{ y: -5 }}>
+          <motion.a
+            href="https://www.facebook.com/benard.olowah"
+            whileHover={{ y: -5 }}
+            target="_blank"
+          >
             <BsFacebook id="footer-icon" />
           </motion.a>
-          <motion.a href="#" whileHover={{ y: -5 }}>
+          <motion.a
+            href="https://twitter.com/OlowahP?t=AuIBdeOjIIHA1EQEt5VmZQ&s=08"
+            whileHover={{ y: -5 }}
+            target="_blank"
+          >
             <BsTwitter id="footer-icon" />
           </motion.a>
-          <motion.a href="#" whileHover={{ y: -5 }}>
+          <motion.a
+            href="https://instagram.com/benardolowah?igshid=ZDdkNTZiNTM="
+            whileHover={{ y: -5 }}
+            target="_blank"
+          >
             <BsInstagram id="footer-icon" />
           </motion.a>
-          <motion.a href="#" whileHover={{ y: -5 }}>
+          <motion.a
+            href="https://www.linkedin.com/in/benard-owino-b5a0b3244"
+            whileHover={{ y: -5 }}
+            target="_blank"
+          >
             <BsLinkedin id="footer-icon" />
           </motion.a>
         </div>

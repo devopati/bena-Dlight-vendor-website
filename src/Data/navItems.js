@@ -11,7 +11,7 @@ export const NavItems = [
   },
   {
     id: "mobile",
-    label: "Mobile",
+    label: "Mobile Phones",
     path: "/mobile",
   },
   {
