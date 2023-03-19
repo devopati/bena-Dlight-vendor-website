@@ -22,7 +22,7 @@ const Home = () => {
         <div className="home-header1">
           <Typewriter
             options={{
-              strings: ["Affordable, quality verified,solutions."],
+              strings: ["Affordable "],
               autoStart: true,
               loop: true,
             }}
@@ -51,7 +51,12 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div className="home-header2">
+        <div
+          className="home-header2"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
           <img
             src="https://www.dlight.com/wp-content/uploads/2020/02/preview-lightbox-dlightworld.jpg"
             alt="header"
@@ -80,7 +85,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div className="featured-p-body" data-aos="zoom-in-down">
+        <div className="featured-p-body" data-aos="zoom-in">
           <img
             src="https://www.dlight.com/wp-content/uploads/featured_products.png"
             alt="featured"
@@ -99,7 +104,7 @@ const Home = () => {
             <h3>1</h3>
             <h4>Click on the Product</h4>
           </div>
-          <div className="home-how-card" data-aos="fade-up-left">
+          <div className="home-how-card" data-aos="zoom-in">
             <small>Step</small>
             <h3>2</h3>
             <h4>Select Buy Now</h4>
@@ -109,7 +114,7 @@ const Home = () => {
             <h3>3</h3>
             <h4>Inquiry of the product</h4>
           </div>
-          <div className="home-how-card" data-aos="fade-down-left">
+          <div className="home-how-card" data-aos="fade-up">
             <small>Step</small>
             <h3>4</h3>
             <h4>Delivery to where you are</h4>
