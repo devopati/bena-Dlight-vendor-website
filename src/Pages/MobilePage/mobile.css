@@ -58,6 +58,10 @@
     width: 50%;
     height: 9rem;
 }
+.nokia-image.samsung-image img{
+    width: 65%;
+
+}
 
 .n-t2{
     color: grey;
@@ -66,6 +70,37 @@
 .n-t1{
     color: var(--color-orange);
     margin-top: 0.6rem;
+}
+
+.mobilePage-last{
+    background: var(--color-bg-variant);
+    display: grid;
+    grid-template-columns: 40% 50%;
+    gap: 10%;
+    margin-bottom: 2rem;
+}
+.m-last-header{
+    margin-bottom: 1.7rem;
+    font-size: 1.8rem;
+}
+
+.m-last-logo{
+    padding: 3rem;
+}
+.m-last-logo img{
+    width: 60%;
+}
+.m-last-description{
+    padding: 3rem;
+    margin: auto;
+}
+.m-last-description p{
+    color: var(--color-txt-variant);
+}
+.m-last-description span{
+    font-weight: bold;
+    color: var(--color-txt);
+   
 }
 
 @media screen and (max-width:768px) {
@@ -84,5 +119,20 @@
     .nokia-cards{
         grid-template-columns: 1fr;
         padding: 0.1rem;
+    }
+
+    .mobilePage-last{
+        grid-template-columns: 35% 50%;
+        gap: 3%;
+
+    }
+    .m-last-logo{
+        padding: .5rem;
+        margin-top: 1.7rem;
+    }
+    .m-last-description{
+        padding: .5rem;
+        margin-top: 1.7rem;
+        margin-bottom: 1.7rem;
     }
 }

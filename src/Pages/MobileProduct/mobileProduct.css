@@ -32,11 +32,13 @@
     gap: .9rem;
     align-items: center;
     justify-content: center;
+    
 }
+
 #m-p-icon{
     font-size: 1.7rem;
     color: var(--color-orange);
-    
+   
 }
 .mobile-product-image img{
     width: 80%;

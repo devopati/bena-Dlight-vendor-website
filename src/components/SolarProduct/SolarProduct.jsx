@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
-import "./mobileProduct.css";
-import { nokiaData } from "../../Data/nokiaData";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
-import { samsungData } from "../../Data/samsungData";
+import { solarSystemsData } from "../../Data/solarData";
 
 const MobileProduct = () => {
   const capacityIcon =
@@ -16,19 +14,19 @@ const MobileProduct = () => {
     "https://www.dlight.com/wp-content/uploads/Memory-Icon-1.png";
   const paygoIcon =
     "https://www.dlight.com/wp-content/uploads/PayGo-Icon-1.png";
-  const { name, prodId } = useParams();
+  const { name, solarId } = useParams();
 
   const [mapData, setMapData] = useState([]);
 
   useEffect(() => {
-    name === "nokia" ? setMapData(nokiaData) : setMapData(samsungData);
+    setMapData(solarSystemsData);
   }, [mapData]);
   return (
     <>
       <div></div>
       <div className="mobile-product-container">
         {mapData
-          .filter((item) => item.id === prodId)
+          .filter((item) => item.id === solarId)
           .map((item) => {
             return (
               <div className="m-product-top" key={item.id}>

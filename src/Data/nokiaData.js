@@ -13,6 +13,7 @@ export const nokiaData = [
     memory: "Memory: 32GB RAM: 2GB",
     display: "6.52'HD",
     inboxImg: "https://www.dlight.com/wp-content/uploads/Nokia-C20.png",
+    brand: "nokia",
   },
   {
     id: "c30",
@@ -28,6 +29,7 @@ export const nokiaData = [
     crear: "13+2MP",
     display: "",
     inboxImg: "https://www.dlight.com/wp-content/uploads/Nokia-C30-3.png",
+    brand: "nokia",
   },
   {
     id: "c2",
@@ -41,6 +43,7 @@ export const nokiaData = [
     crear: "13+2MP",
     display: "5.7'HD+",
     inboxImg: "https://www.dlight.com/wp-content/uploads/Nokia-C20.png",
+    brand: "nokia",
   },
   {
     id: "c10",
@@ -55,6 +58,7 @@ export const nokiaData = [
     crear: "5MP",
     display: "6.52'HD+",
     inboxImg: "https://www.dlight.com/wp-content/uploads/Nokia-C20.png",
+    brand: "nokia",
   },
   {
     id: "c21",
@@ -69,6 +73,7 @@ export const nokiaData = [
     crear: "5MP",
     display: "6.52'HD+",
     inboxImg: "https://www.dlight.com/wp-content/uploads/Nokia-C20.png",
+    brand: "nokia",
   },
   {
     id: "c21+",
@@ -83,6 +88,7 @@ export const nokiaData = [
     crear: "5MP",
     display: "6.52'HD+",
     inboxImg: "https://www.dlight.com/wp-content/uploads/Nokia-C20.png",
+    brand: "nokia",
   },
   {
     id: "g10+",
@@ -97,5 +103,6 @@ export const nokiaData = [
     crear: "5MP",
     display: "6.52'HD+",
     inboxImg: "https://www.dlight.com/wp-content/uploads/Nokia-C20.png",
+    brand: "nokia",
   },
 ];
