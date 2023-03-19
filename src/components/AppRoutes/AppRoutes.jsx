@@ -7,13 +7,13 @@ import ScrollToTop from "../scrollToTop/ScrollToTop";
 
 const AppRoutes = () => {
   return (
-    <Routes>
-      <ScrollToTop>
+    <ScrollToTop>
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/mobile" element={<MobilePage />} />
         <Route path="/mobile/:nokiaId" element={<MobileProduct />} />
-      </ScrollToTop>
-    </Routes>
+      </Routes>
+    </ScrollToTop>
   );
 };
 
