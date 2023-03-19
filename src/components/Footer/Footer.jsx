@@ -19,6 +19,7 @@ const Footer = () => {
         className="f-c-contents"
         data-aos="fade-up"
         data-aos-anchor-placement="center-bottom"
+        data-aos-duration="2000"
       >
         <div className="footer-contact">
           <div className="f-contact-h3">
